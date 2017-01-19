@@ -1,0 +1,9 @@
+<form id="contactForm">
+	<label id="formTitles">Full Name:</label>
+	<input id="formInputs" type="text" ng-model="question.name" size="40">
+	<label id="formTitles">Your Email Address: </label>
+	<input  id="formInputs" type="email" ng-model="question.email" size="40">
+	<label id="formTitles">Message to the Bride and Groom: </label>
+	<textarea  id="formInputs" ng-model="question.comment" rows="4" cols="40"></textarea>
+	<input id="formSubmitButton" type="submit" value="Send My Message" ng-click="contactEmail()">
+</form>

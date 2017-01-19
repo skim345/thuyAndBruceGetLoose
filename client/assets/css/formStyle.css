@@ -1,0 +1,53 @@
+@font-face{
+    font-family: "Bakery";
+    src: url('./../fonts/bakery.otf'),
+    url('bakery.otf'); /* IE */
+}
+@font-face{
+    font-family: "Heart";
+    src: url('./../fonts/Give_It_Your_Heart.ttf'),
+    url('Give_It_Your_Heart.ttf'); /* IE */
+}
+#contactForm{
+	position: fixed;
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	left: auto;
+	right: auto;
+	text-align: center;
+	margin-top: 5%;
+}
+#formTitles, #formInputs{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	left: auto;
+	right: auto;
+	text-align: center;
+}
+#formInputs{
+    font-family: "Heart";
+	
+	font-size: 100%;
+}
+#formTitles{
+	color: white;
+	font-size: 200%;
+	font-family: "Bakery";
+}
+#formSubmitButton{
+	margin-top: 3%;
+    font-family: "Bakery";
+    font-size: 200%;
+    padding: 1%;
+    color: white;
+	border: none;
+	background: none;
+}
+	#formSubmitButton:hover{
+		text-decoration: underline;
+	}

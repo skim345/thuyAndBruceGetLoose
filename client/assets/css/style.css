@@ -1,0 +1,158 @@
+@font-face{
+    font-family: "Sacramento";
+    src: url('./../fonts/Sacramento.ttf'),
+    url('Sacramento.ttf'); /* IE */
+}
+@font-face{
+    font-family: "Heart";
+    src: url('./../fonts/Give_It_Your_Heart.ttf'),
+    url('Give_It_Your_Heart.ttf'); /* IE */
+}
+@font-face{
+    font-family: "Bakery";
+    src: url('./../fonts/bakery.otf'),
+    url('bakery.otf'); /* IE */
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*body{
+	background-image: url('./../images/engagement3.jpg');
+	background-repeat: no-repeat;
+}*/
+html { 
+  background: url('./../images/engagement3.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#rightNav{
+	width: 55%;
+	display: block;
+	position: absolute;
+	right: 1%;
+	text-align: center;
+	overflow-y: auto;
+}
+#navButtons a{
+	font-family: "Sacramento";
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	font-size: 220%;
+	margin: 0.75%;
+	font-weight: bolder;
+}
+#mainTitle{
+	margin-top: 20%;
+	font-family: "Bakery";
+	color: white;
+	width: 55%;
+	left: 0%;
+	right: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 225%;
+	font-weight: lighter;
+}
+#mainSubtitle{
+	font-family: "Heart";
+	color: white;
+	margin: 2%;
+	font-size: 225%;
+}
+#love{
+	color: red;
+	margin: 0.5%;
+}
+.bridalPics{
+	width: 28%;
+	height: 25%;
+	/*border-radius: 10%;*/
+}
+.bridalTitle{
+	font-family: "Bakery";
+	color: white;
+	margin: 1%;
+	font-weight: lighter;
+}
+.bridalSubTitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1.5%;
+}
+#churchTitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1%;
+}
+#churchSubTitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1%;
+}
+#church{
+	width: 45%;
+	margin: 1%;
+}
+#map{
+	width: 45%;
+	heigth: 40%;
+	margin: 1%;
+}
+#venueTitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1%;
+}
+#receptionPic{
+	width: 45%;
+	margin: 1%;
+}
+#receptionSubtitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1%;
+}
+#ctdTimer{
+	color: white;
+}
+#pics{
+	width: 35%;
+	heigth: 35%;
+	margin: 1%;
+	padding: 5px;
+}
+#enlarged{
+	width: 75%;
+	height: 55%;
+	margin-top: 5%;
+}
+#backButton{
+	font-family: "Heart";
+	color: white;
+	display: block;
+	text-decoration: none;
+	font-size: 225%;
+	margin-top: 3%;
+}
+#bridesmaidsTitle{
+	font-family: "Bakery";
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 500%;
+	display: block;
+	margin-top: 12%;
+}
+#groomsmenTitle{
+	font-family: "Bakery";
+	color: white;
+	text-decoration: none;
+	font-weight: lighter;
+	font-size: 500%;
+	display: block;
+	margin-top: 5%;
+}

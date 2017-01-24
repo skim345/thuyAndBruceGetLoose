@@ -42,11 +42,11 @@ html {
 	display: inline-block;
 	color: white;
 	font-size: 220%;
-	margin: 0.75%;
+	margin: 1.5%;
 	font-weight: bolder;
 }
 #mainTitle{
-	margin-top: 20%;
+	margin-top: 18%;
 	font-family: "Bakery";
 	color: white;
 	width: 55%;
@@ -155,4 +155,19 @@ html {
 	font-size: 500%;
 	display: block;
 	margin-top: 5%;
+}
+#contactTitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1%;
+	font-size: 175%;
+	margin-top: 12%;
+	font-weight: bolder;
+}
+#contactSubTitle{
+	font-family: "Heart";
+	color: white;
+	margin: 1%;
+	font-size: 150%;
+
 }

@@ -7,15 +7,16 @@ var bodyParser = require('body-parser');
 var bcrypt = require('bcryptjs');
 mongoose = require('mongoose');
 
-smtpTransport = nodemailer.createTransport("SMTP",{
+smtpTransport = nodemailer.createTransport({
 	// host: "smtp.gmail.com",
-	secure: true,
+	// secure: true,
 	service: "Gmail",
 	auth: {
 		user: "ThuyBruce052017",
 		pass: "boobsicles"
 	}
 });
+
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname,"./client")));
 app.use(express.static(path.join(__dirname,'./bower_components')));

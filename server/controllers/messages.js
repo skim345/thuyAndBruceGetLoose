@@ -2,13 +2,27 @@ module.exports=(function(){
 	return{
 	
 contactEmail: function(req, res){
-			console.log(req.body);
-			// { name: 'Steph', comment: 'Hello' }
-			var mailOptions = {
-				to: "ThuyBruce052017@gmail.com",
-				subject: "Question From: "+req.body.email,
-				text: req.body.name+": "+req.body.comment
-			}
+			// console.log(req.body);
+			// { name: 'Stephanie Kim',
+  	// 			email: 'skim345@gmail.com',
+  	// 			comment: 'hello testing' }
+  	var name = req.body.name;
+  	var from = req.body.email;
+  	var message = req.body.comment;
+  	var to = "ThuyBruce052017@gmail.com";
+  	var smtpTransport = nodemailer.createTransport("SMTP",{
+		service: "Gmail",
+		auth: {
+			user: "ThuyBruce052017",
+			pass: "boobsicles"
+		}
+});
+	var mailOptions = {
+		from: from,
+		to: to,
+		subject: "Question From: "+ name+" -Email:  " +from,
+		text: message
+	}
 			// console.log(mailOptions);
 			smtpTransport.sendMail(mailOptions, function(err, response){
 				if(err){

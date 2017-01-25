@@ -8,6 +8,23 @@
 	<input id="formSubmitButton" type="submit" value="Send My Message" ng-click="contactEmail()">
 </form> -->
 
-<p id="contactTitle">Please send RSVP invitations by March 1, 2017 to: </p>
+<!-- <p id="contactTitle">Please send RSVP invitations by March 1, 2017 to: </p>
 <p id="contactSubTitle">12541 Pinehurst St.</p>
 <p id="contactSubTitle">El Monte, CA 91732</p>
+ -->
+<form>
+	<input type="text" ng-model="rsvp.name" placeholder="full name">
+	<input type="text" ng-model="rsvp.numberAttending" placeholder="number attending">
+	<input type="text" ng-model="rsvp.guest1" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest2" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest3" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest4" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest5" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest6" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest7" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest8" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest9" placeholder="name of guest attending">
+	<input type="text" ng-model="rsvp.guest10" placeholder="name of guest attending">
+
+	<input type="submit" ng-click="rsvpForm()">
+</form>

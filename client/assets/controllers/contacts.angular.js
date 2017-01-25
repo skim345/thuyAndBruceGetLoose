@@ -14,7 +14,18 @@ myApp.controller('contactController',['$scope', '$routeParams', '$location','con
 			}
 		})
 	}
-	
+	$scope.rsvpForm = function(){
+		// console.log($scope.rsvp);
+		contactFactory.rsvpForm($scope.rsvp, function(response){
+			if(!response.status){
+				$scope.errors.push(response.errors);
+			}else{
+				$scope.rsvp = "";
+				alert('You have successfully rsvpd');
+			}
+		})
+
+	}
 
 
 

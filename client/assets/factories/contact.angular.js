@@ -13,6 +13,20 @@ factory.contactEmail= function(messageInfo, callback){
 		})
 	}
 	
+	factory.rsvpForm = function(rsvpInfo, callback){
+		// console.log(rsvpInfo);
+		// bjectguest1: "stephanie"
+		// guest2: "enrique"
+		// name: "stephanie"
+		// numberAttending: "2"
+		$http.post('/rsvpForm', rsvpInfo).then(function(response){
+			if(!response.status){
+				callback(response);
+			}else{
+				callback(response);
+			}
+		})
+	}
 
 
 

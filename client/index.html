@@ -1,18 +1,22 @@
 <html ng-app = 'myApp'>
 <head>
 	<title>#ThuyAndBruceGetLoose</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="angular/angular.js" charset="utf-8"></script>
     <script src="angular-route/angular-route.js" charset="utf-8"></script>
     <script src="angular-cookies/angular-cookies.js" charset="utf-8"></script>
-
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/formStyle.css">
-
-
+    <link rel="stylesheet" type="text/css" href="./assets/css/lightbox.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/formStyle.css"> -->
     <script src="./assets/app.js" charset="utf-8"></script>
-
     <script src="./assets/factories/contact.angular.js"></script>
     <script src="./assets/controllers/contacts.angular.js"></script>
+    <script type="text/javascript" src="./assets/lightbox.js"></script>
+
 </head>
 <body>
 	<div id="rightNav">
@@ -22,7 +26,7 @@
 			<a href="#/ceremony">ceremony</a>
 			<a href="#/reception">reception</a>
 			<a href="#/pictures">pictures</a>
-			<a href="#/contact">rsvp information</a>
+			<a href="#/contact">contact information</a>
 		</div>
 		<div ng-view=""></div>
 	</div>

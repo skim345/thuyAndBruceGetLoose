@@ -12,7 +12,7 @@ module.exports=(function(){
 				service: "Gmail",
 				auth: {
 					user: "ThuyBruce052017",
-					pass: "boobsicles"
+					pass: "**********"
 				}
 			});
 			var mailOptions = {

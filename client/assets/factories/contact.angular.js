@@ -1,8 +1,8 @@
 myApp.factory('contactFactory', function($http){
 	var factory = {}
 
-	
-factory.contactEmail= function(messageInfo, callback){
+	// Routing to email	
+	factory.contactEmail= function(messageInfo, callback){
 	// console.log(messageInfo);
 		$http.post('/contactEmail',messageInfo).then(function(response){
 			if(!response.status){
@@ -12,13 +12,8 @@ factory.contactEmail= function(messageInfo, callback){
 			}
 		})
 	}
-	
+	// Routing for RSVP form
 	factory.rsvpForm = function(rsvpInfo, callback){
-		// console.log(rsvpInfo);
-		// bjectguest1: "stephanie"
-		// guest2: "enrique"
-		// name: "stephanie"
-		// numberAttending: "2"
 		$http.post('/rsvpForm', rsvpInfo).then(function(response){
 			if(!response.status){
 				callback(response);

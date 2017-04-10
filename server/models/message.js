@@ -32,6 +32,7 @@ var bcrypt= require('bcryptjs');
 // userSchema.methods.validPassword = function (password){
 // 	return bcrypt.compareSync(password, this.password);
 // }
+// RSVP schema
 var rsvpSchema = new mongoose.Schema({
 	name:{type: String, required: true},
 	numberAttending:{type:Number, required: true},

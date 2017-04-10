@@ -2,7 +2,7 @@ var RSVP = mongoose.model('RSVP');
 
 module.exports=(function(){
 	return{
-	
+		// Send email
 		contactEmail: function(req, res){
 		  	var name = req.body.name;
 		  	var from = req.body.email;
@@ -36,8 +36,8 @@ module.exports=(function(){
 			})
 
 		},
+		// RSVP
 		rsvpForm: function(req, res){
-		// console.log(req.body);
 		var newRsvp= new RSVP({
 			name: req.body.name,
 			numberAttending: req.body.numberAttending,

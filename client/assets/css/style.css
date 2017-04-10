@@ -17,10 +17,7 @@
 	margin: 0px;
 	padding: 0px;
 }
-/*body{
-	background-image: url('./../images/engagement3.jpg');
-	background-repeat: no-repeat;
-}*/
+
 html { 
   background: url('./../images/engagement3.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;

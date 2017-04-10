@@ -3,8 +3,8 @@ myApp.controller('contactController',['$scope', '$routeParams', '$location','con
 	$scope.errors=[];
 
 
+	// Email to email owners
 	$scope.contactEmail = function(){
-		// console.log($scope.question);
 		contactFactory.contactEmail($scope.question, function(response){
 			if(!response.status){
 				$scope.errors.push(response.errors);
@@ -14,8 +14,8 @@ myApp.controller('contactController',['$scope', '$routeParams', '$location','con
 			}
 		})
 	}
+	// RSVP form
 	$scope.rsvpForm = function(){
-		// console.log($scope.rsvp);
 		contactFactory.rsvpForm($scope.rsvp, function(response){
 			if(!response.status){
 				$scope.errors.push(response.errors);
